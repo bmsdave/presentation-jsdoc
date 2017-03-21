@@ -14,69 +14,154 @@
 </header>
 
 <section class="slide">
-    <h1>Gulp</h1>
-    <p><a href="https://github.com/gulpjs/gulp/blob/master/docs/README.md">go to docs</a></p>
-    <ul>
-        <li><a href="https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulptaskname--deps--fn">gulp.task</a></li>
-        <li><a href="https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulpsrcglobs-options">gulp.src</a></li>
-        <li><a
-            href="https://nodejs.org/api/stream.html#stream_readable_pipe_destination_options">gulp.src(###).pipe()</a>
-        </li>
-        <li><a href="https://github.com/OverZealous/run-sequence">require('run-sequence')</a></li>
-        <li><a href="http://frontender.info/handling-sync-tasks-with-gulp-js/">alternative way: run sync tasks</a></li>
-        <li><a href="https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulpdestpath-options">gulp.dest</a></li>
-        <li><a
-            href="https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulpwatchglob--opts-tasks-or-gulpwatchglob--opts-cb">gulp.watch</a>
-        </li>
-    </ul>
-
-    <h4>Example in "./examples/1-gulp-simple"</h4>
-
-</section>
-
-<section class="slide">
-    <h1>Some features of Gulp</h1>
-    <p>svg, karma, e.t.c.</p>
-    <ul>
-        <li><a href="https://github.com/jkphl/gulp-svg-sprite">svg</a></li>
-        <li><a href="https://github.com/karma-runner/gulp-karma">karma</a></li>
-    </ul>
-
-    <h4>Example in "./examples/2-gulp-features"</h4>
-
-</section>
-
-<section class="slide">
-    <h1><a href="https://webpack.js.org/">Webpack</a></h1>
-    <p><a href="https://learn.javascript.ru/screencast/webpack">good screencast</a></p>
-    <ul>
-        <li><a href="https://webpack.github.io/docs/configuration.html">Config file</a></li>
-        <li><a href="https://webpack.github.io/docs/multiple-entry-points.html">Entry Points</a></li>
-        <li><a href="https://webpack.github.io/docs/loaders.html">Loaders</a></li>
-        <li><a href="https://github.com/webpack-contrib/extract-text-webpack-plugin">extract-text-plugin</a></li>
-    </ul>
-
-    <h4>Example in "./examples/3-webpack"</h4>
-
-</section>
-
-<section class="slide">
-    <h1>Webpack and e.t.c.</h1>
+    <h1>Самодокументирующийся код</h1>
     <p>
-        <a href="https://babeljs.io/">Babel</a>,
-        <a href="https://github.com/postcss/postcss">PostCSS</a>,
-        <a href="https://www.typescriptlang.org/">TypeScript</a>
+        Пишите код, исходя из того, что все программисты, которые будут сопровождать вашу программу,
+        - склонные к насилию психопаты, знающие, где Вы живете.
     </p>
-    <ul>
-        <li><a href="https://webpack.github.io/docs/configuration.html">Config file</a></li>
-        <li><a href="https://webpack.github.io/docs/multiple-entry-points.html">Entry Points</a></li>
-        <li><a href="https://webpack.github.io/docs/loaders.html">Loaders</a></li>
-        <li><a href="https://github.com/webpack-contrib/extract-text-webpack-plugin">extract-text-plugin</a></li>
-    </ul>
-
-    <h4>Example in "./examples/3-webpack"</h4>
-
 </section>
+
+<section class="slide">
+    <h1>Внешняя документация</h1>
+    <ul>
+        <li>трекер задач/багов (JIRA..)</li>
+        <li>wiki</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h1>Стиль программирования как вид документации</h1>
+    <p>Внутренняя документация сильнее связана с кодом,
+        поэтому при изменении кода она чаще остается корректной</p>
+    <ul>
+        <li>Грамотное структурирование программы</li>
+        <li>Использование простых и понятных подходов</li>
+        <li>Удачный выбор имен переменных и методов</li>
+        <li>Использование именованных констант вместо литералов</li>
+        <li>Ясное форматирование</li>
+        <li>Минимизация сложности потока управления и структур данных</li>
+    </ul>
+</section>
+
+
+<section class="slide">
+    <h1>TODO: пример плохого кода</h1>
+</section>
+
+<section class="slide">
+    <h1>TODO: пример хорошего кода</h1>
+</section>
+
+<section class="slide">
+    <h1>комментировать или не комментировать?</h1>
+    <ul>
+        <li> Комментарии легче написать плохо, а не хорошо,
+        и комментирование  иногда бывает скорее вредным, чем полезным.</li>
+
+        <li> - Нужно следить за актуальностью </li>
+        <li> + Описывают код </li>
+    </ul>
+</section>
+
+<section class="slide">
+    <p>Исмена: - Мне кажется, что люди, отказывающтеся писать комментарии,</p>
+    <ul>
+        <li>(1) Думаю, что их код понятнее, чем мог бы быть</li>
+        <li>(2) считают, что другие программисты гораздо сильнее интересуются их кодом, чем есть на самом деле</li>
+        <li>(3) думают, что другие программисты умнее, чем есть на самом деле</li>
+        <li>(4) ленятся</li>
+        <li>(5) боятся, что кто-то другой узнает как работает их код</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h1>style guide</h1>
+    <ul>
+        <li>делайте в комментарии такой же отступ как и в соответствующем ему коде</li>
+        <li>отделяйте каждый комментарий хотя бы одной пустой строкой</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h1>Виды комментариев</h1>
+    <ul>
+        <li>Повторение кода</li>
+        <li>Объяснение кода</li>
+        <li>Маркер в коде</li>
+        <li>Резюме кода</li>
+        <li>Описание цели кода</li>
+        <li>Информация, которую невозможно выразить в форме кода</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <p>Ясно, что на некотором уровне коментарии должны быть полезны. Думать иначе означало бы полагать, что понятность программы не зависит от того, сколько информации о ней уже известно читающему программу человеку. (с) Б. Шейл </p>
+</section>
+
+<section class="slide">
+    <h1>Эффективные комментарии</h1>
+    <ul>
+        <li>TODO: пример с трудно поддерживаемым комментарием</li>
+        <li>TODO: пример с легко поддерживаемым комментарием</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h1>Методики комментирования</h1>
+    <ul>
+        <li>Комментирование отдельных строк</li>
+        <li>Комментарии в концах строк и связанные с ними проблемы</li>
+        <li>Комментирование абзацев кода</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h1>Советы</h1>
+    <ul>
+        <li>Во время документирования сосредоточьтесь на самом коде</li>
+        <li>Придумывая комментарий абзаца, страмитесь ответить на вопрос "почему?", а не "как?"</li>
+        <li>Используйте комментарии для подготовки читателя дока к последующемй информации</li>
+        <li>Не размножайте комментарии без необходимости</li>
+        <li>Документируйте сюрпризы</li>
+        <li>Избегайте сокращений</li>
+        </ul>
+</section>
+
+<section class="slide">
+    <h1>Советы</h1>
+    <ul>
+        <li>Проведите различия между общими и детальными комментариями</li>
+        <li>Комментируйте все, что имеет отношение к ошибкам или недокументированным возможностям языка или среды</li>
+        <li>Обосновывайте нарушения хорошего стиля программирования</li>
+        <li>Не комментируйте хитрый код - перепишите его</li>
+        <li>Указывайте в комментациях единицы измерения численных величин</li>
+        <li>Указывайте в комментариях диапазоны допустимых значений численных величин</li>
+        </ul>
+</section>
+
+<section class="slide">
+    <h1>Советы</h1>
+    <ul>
+        <li>Комментируйте смысл закодированных значений</li>
+        <li>Комментируйте ограничение входных данных</li>
+        <li>Включайте в комментарий, относящийся к переменной, имя переменной</li>
+        <li>Включайте в комментарий, относящийся к переменной, имя переменной</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h1>Ключевый моменты</h1>
+    <ul>
+        <li>При плохом выполнении комментирование является пустой тратой времени и иногда причиняет вред</li>
+        <li>При грамотном применении комментирование полезно</li>
+        <li>Основная часть критически важной информации о программе должна содержаться в исходном коде.</li>
+        <li>Хороший код сам является самой лучшей документацией</li>
+        <li>Комментарии должны сообщать о коде что-то такое, что он не может сообщить сам - на уровне резюме или уровне цели</li>
+        <li>Используйте стиль, который было бы легко поддерживать</li>
+    </ul>
+</section>
+
+
 
 <div class="progress"></div>
 
