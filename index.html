@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Module Bundler & Task Runner</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+</head>
+<body class="shower list">
+
+<header class="caption">
+    <h1>Module Bundler & Task Runner</h1>
+</header>
+
+<section class="slide">
+    <h1>Gulp</h1>
+    <p><a href="https://github.com/gulpjs/gulp/blob/master/docs/README.md">go to docs</a></p>
+    <ul>
+        <li><a href="https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulptaskname--deps--fn">gulp.task</a></li>
+        <li><a href="https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulpsrcglobs-options">gulp.src</a></li>
+        <li><a
+            href="https://nodejs.org/api/stream.html#stream_readable_pipe_destination_options">gulp.src(###).pipe()</a>
+        </li>
+        <li><a href="https://github.com/OverZealous/run-sequence">require('run-sequence')</a></li>
+        <li><a href="http://frontender.info/handling-sync-tasks-with-gulp-js/">alternative way: run sync tasks</a></li>
+        <li><a href="https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulpdestpath-options">gulp.dest</a></li>
+        <li><a
+            href="https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulpwatchglob--opts-tasks-or-gulpwatchglob--opts-cb">gulp.watch</a>
+        </li>
+    </ul>
+
+    <h4>Example in "./examples/1-gulp-simple"</h4>
+
+</section>
+
+<section class="slide">
+    <h1>Some features of Gulp</h1>
+    <p>svg, karma, e.t.c.</p>
+    <ul>
+        <li><a href="https://github.com/jkphl/gulp-svg-sprite">svg</a></li>
+        <li><a href="https://github.com/karma-runner/gulp-karma">karma</a></li>
+    </ul>
+
+    <h4>Example in "./examples/2-gulp-features"</h4>
+
+</section>
+
+<section class="slide">
+    <h1><a href="https://webpack.js.org/">Webpack</a></h1>
+    <p><a href="https://learn.javascript.ru/screencast/webpack">good screencast</a></p>
+    <ul>
+        <li><a href="https://webpack.github.io/docs/configuration.html">Config file</a></li>
+        <li><a href="https://webpack.github.io/docs/multiple-entry-points.html">Entry Points</a></li>
+        <li><a href="https://webpack.github.io/docs/loaders.html">Loaders</a></li>
+        <li><a href="https://github.com/webpack-contrib/extract-text-webpack-plugin">extract-text-plugin</a></li>
+    </ul>
+
+    <h4>Example in "./examples/3-webpack"</h4>
+
+</section>
+
+<section class="slide">
+    <h1>Webpack and e.t.c.</h1>
+    <p>
+        <a href="https://babeljs.io/">Babel</a>,
+        <a href="https://github.com/postcss/postcss">PostCSS</a>,
+        <a href="https://www.typescriptlang.org/">TypeScript</a>
+    </p>
+    <ul>
+        <li><a href="https://webpack.github.io/docs/configuration.html">Config file</a></li>
+        <li><a href="https://webpack.github.io/docs/multiple-entry-points.html">Entry Points</a></li>
+        <li><a href="https://webpack.github.io/docs/loaders.html">Loaders</a></li>
+        <li><a href="https://github.com/webpack-contrib/extract-text-webpack-plugin">extract-text-plugin</a></li>
+    </ul>
+
+    <h4>Example in "./examples/3-webpack"</h4>
+
+</section>
+
+<div class="progress"></div>
+
+<script src="node_modules/shower-core/shower.min.js"></script>
+<!-- Copyright © 2017 Vadim Gorbachev -->
+</body>
+</html>
